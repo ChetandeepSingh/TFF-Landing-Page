@@ -1,0 +1,276 @@
+body {
+    padding: 0 auto;
+    margin: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.nav {
+    background-color: #04030f;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 10px;
+    display: inline-flex;
+}
+
+.mainnav{
+    width: 100%;
+    margin: 0%;
+}
+
+.nav2{
+    margin-left: 50px;
+    
+}
+.nav1 {
+    padding: 20px;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tfflogo {
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+.video{
+    
+    margin:0%;
+    padding: 0%;
+    text-align: center;
+}
+video{
+    transform: rotate(-90deg);
+    width: 500px;
+}
+
+.nav table tr td {
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    color: rgb(117, 117, 117);
+}
+
+.nav table tr td:hover {
+    font-size: 21.2px;
+    color: rgb(68, 68, 68);
+    transition: 0.6s;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 3px;
+    border-color: black;
+}
+
+.linkyarea {
+    background-color: black;
+    color: lightgray;
+    height: 80px;
+    width: 100%;
+}
+
+.linkyarea table tr td {
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.cards>div {
+    margin: 15px;
+}
+
+.cards>div>div {
+    background-color: rgb(9, 83, 9);
+    align-content: space-between;
+    opacity: 60%;
+    height: 230px;
+    width: 230px;
+    margin: 100px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 26px;
+    color: white;
+}
+
+.cards>div>div:hover {
+    opacity: 70%;
+
+}
+
+.card1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+}
+
+.card1>div {
+    height: 120px;
+    WIDTH: 310px;
+    align-content: space-between;
+    margin-left: 40px;
+    margin-top: -20px;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    display: block;
+}
+
+.flip-card-back {
+    background-color: green;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.table {
+    align-items: center;
+}
+
+*{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
